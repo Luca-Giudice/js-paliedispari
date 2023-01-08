@@ -15,9 +15,10 @@
 
 const userWordElement = document.getElementById('user-word')
 const resultElement = document.getElementById('reslut')
-const buttonElement = document.getElementById('button')
+const button = document.getElementById('button')
 
 function palindrome(text){
+   
     const len = text.length;
 
     for( let i = 0; i < len; i++){
@@ -25,13 +26,19 @@ function palindrome(text){
         if(text[i] !== text[len - 1 -i]){
       
             return 'Non è un palindromo'
-    }
+        }
    
-}
+    }
    
     return 'palindromo';
 }
 
-buttonElement.addEventListener('click', function()) {
+button.addEventListener("click", function(), )
+{
+
+    let def = userWordElement.palindrome()
 
 }
+
+
+buttonElement.innerText = def;
